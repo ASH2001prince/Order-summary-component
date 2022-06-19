@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;0,700;1,900&display=swap');
+:root{
+    /* ### Primary */
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    /* ### Neutral */
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:calc(100vh-1px) ;
+    font-size: 16px;
+    background-color: var(--Pale-blue);
+}
+.card{
+    width: 425px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 20px;
+}
+img.illustration-image{
+   max-width: 100%;
+   border-radius: 15px 15px 0px 0px;
+}
+h1{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--Dark-blue);
+}
+p.head-line{
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: var(--Desaturated-blue);
+    font-weight: 500;
+    margin: 23px;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--Very-pale-blue);
+    margin-left: 20px;
+    width: 88%;
+    height: 6rem;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.music{
+    display: flex;
+    margin-left: 25px;
+    align-items: center;
+}
+h4{
+    margin-left: 20px;
+    font-size: 18px;
+}
+p.year{
+    color:var(--Desaturated-blue);
+    font-weight: 500;
+}
+a.change{
+    display: flex;
+    align-items: center;
+    color: var(--Bright-blue);
+    font-weight: 700;
+    margin-right: 20px;
+}
+a.change:hover{
+opacity: 0.6;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    padding: 10px;
+}
+button.Payment{
+    margin: 10px;
+    height: 55px;
+    background-color: var(--Bright-blue);
+    border-radius: 10px;
+    color: var(--Very-pale-blue);
+    font-weight: 900;
+    border: 0px solid;
+    cursor: pointer;
+    letter-spacing: 0.4px;
+}
+button.Payment:hover{
+    opacity: 0.6;
+}
+p.Order{
+    text-align: center;
+    color: var(--Desaturated-blue);
+    font-weight: 900;
+    margin-top: 23px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: 0.5s ease-in-out;
+}
+p.Order:hover{
+    color: var(--Dark-blue);
+    transform: translateY(5px);
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;  
+    bottom: 0; 
+    text-align: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+} 
+    @media (max-width:375px) {
+    body{    
+        background-image: url(images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+      }
+      .card{
+        width: 350px;
+      }
+    }
+    @media (min-width:376px) and (max-width:1440px){
+        body{
+            background-image: url(images/pattern-background-desktop.svg);
+            background-repeat: no-repeat;   
+        }
+    }
